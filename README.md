@@ -1,6 +1,6 @@
 ## starwood ![NPM version](https://img.shields.io/npm/v/starwood.svg?style=flat) 
 
-a SDK of Starwood hotels APIs.
+a SDK of Starwood hotels APIs - catered to US hotels
 
 ### Installation
 ```bash
@@ -12,11 +12,11 @@ $ npm install starwood --save
 var starwood = require('starwood');
 
 starwood.search({
-  country: 'CN',
-  province: 'CNHP',
-  city: 'Sanya',
-  arrivalDate: dataUtils.now(),
-  departureDate: dataUtils.tomorrow()
+  country: 'US',
+  state: 'CA',
+  city: 'Ontario',
+  arrivalDate: '11/18/2017',
+  departureDate: '11/20/2017',
 }, function(err, hotels){
   if (err)
     return console.error(err)
