@@ -25,6 +25,7 @@
   "dependencies": {
     "cheerio": "^0.18.0",
     "debug": "^2.1.0",
+    "express": "^4.16.2",
     "sdk": "0.2.1",
     "trim": "0.0.1"
   },
