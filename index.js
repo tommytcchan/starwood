@@ -1,20 +1,24 @@
 var starwood = require('./lib/starwood');
 var express = require('express');
-var router = express.Router();
 
-router.get('/', function (req, res, next) {
+const app = express();
+
+app.listen(8080, () => console.log('Starwoods API listening on port 8080!'));
+
+app.get('/', function (req, res) {
 
   var data = {
-        city: req.city,
-        state: req.state,
-        country: req.country,
-        arrivalDate: req.arrivalDate,
-        departureDate: req.departureDate
-      };
+    city: req.query.city,
+    state: req.query.state,
+    country: req.query.country,
+    arrivalDate: req.query.arrivalDate,
+    departureDate: req.query.departureDate
+  };
 
   starwood.search(data, function (err, hotels) {
     if (err) {
-      res.send({error: "Unable to parse hotel"});
+      console.log(err);
+      res.send({error: "Unable to parse hotels. " + err});
       return;
     }
     console.log(hotels);
@@ -22,4 +26,3 @@ router.get('/', function (req, res, next) {
   });
 });
 
-module.exports = router;
