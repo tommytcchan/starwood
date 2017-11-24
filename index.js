@@ -13,9 +13,7 @@ app.get('/', function (req, res) {
     departureDate: req.query.departureDate
   };
 
-
-
-  parser.parse(params, function(err, hotels) {
+  parser.parse(params, function (err, hotels) {
     if (err) {
       console.log(err);
       res.send({error: "Unable to parse hotels. " + err});

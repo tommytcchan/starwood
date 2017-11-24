@@ -4,7 +4,7 @@
   "description": "starwood hotels price fetcher",
   "main": "index.js",
   "scripts": {
-    "start": "forever start index.js"
+    "start": "forever -o out.log -e err.log index.js"
   },
   "repository": {
     "type": "git",
