@@ -25,8 +25,6 @@ app.get('/', function (req, res) {
     res.json(hotels);
 
   });
-
-  console.log("Waiting");
 });
 
 app.listen(8080, () => console.log('Starwoods API listening on port 8080!'));
