@@ -1,12 +1,11 @@
 var starwood = require('..');
-var utils = require('../lib/utils');
 
 starwood.search({
-  country: 'CN',
-  province: 'CNHP',
-  city: 'Sanya',
-  arrivalDate: utils.today(),
-  departureDate: utils.tomorrow()
+  city: 'Seattle',
+  state: 'WA',
+  country: 'US',
+  arrivalDate: '02/14/2018',
+  departureDate: '02/16/2018'
 }, function(err, hotels){
   if (err) 
     return console.error(err);

@@ -10,8 +10,8 @@ describe('#Starwood', function () {
         city: 'Seattle',
         state: 'WA',
         country: 'US',
-        arrivalDate: utils.today(),
-        departureDate: utils.tomorrow()
+        arrivalDate: '02/14/2018',
+        departureDate: '02/16/2018',
       }, function (err, hotels) {
         if (err)
           return done(err);
