@@ -4,9 +4,7 @@
   "description": "starwood hotels price fetcher",
   "main": "index.js",
   "scripts": {
-    "test": "DEBUG=starwood,starwood:* node_modules/.bin/mocha tests/search.js",
-    "dev": "DEBUG=starwood,starwood:*,sdk,sdk:* node example/example.js",
-    "example": "npm run dev"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,15 +19,13 @@
   "bugs": {
     "url": "https://github.com/sayoou/starwood/issues"
   },
-  "scripts": {
-    "start": "node index.js"
-  },
   "homepage": "https://github.com/sayoou/starwood",
   "dependencies": {
-    "cheerio": "^0.18.0",
+    "cheerio": "^0.22.0",
     "debug": "^2.1.0",
     "express": "^4.16.2",
-    "sdk": "0.2.1",
+    "forever": "^0.15.3",
+    "request": "^2.83.0",
     "trim": "0.0.1"
   },
   "devDependencies": {
