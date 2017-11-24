@@ -22,7 +22,7 @@
     "url": "https://github.com/sayoou/starwood/issues"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "homepage": "https://github.com/sayoou/starwood",
   "dependencies": {
