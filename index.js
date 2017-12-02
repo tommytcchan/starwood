@@ -25,4 +25,4 @@ app.get('/', function (req, res) {
   });
 });
 
-app.listen(18080, () => console.log('Starwoods API listening on port 8080!'));
+app.listen(8080, () => console.log('Starwoods API listening on port 8080!'));
