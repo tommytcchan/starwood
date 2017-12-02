@@ -1,5 +1,4 @@
 var starwood = require('..');
-var utils = require('../lib/utils');
 
 describe('#Starwood', function () {
   describe('#Search', function () {
