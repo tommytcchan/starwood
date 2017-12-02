@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
       return;
     }
     console.log("Sending hotel results");
-    res.json(hotels);
+    res.json({results: hotels});
 
   });
 });
